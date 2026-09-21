@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --open /dev.html",
+    "build": "vite build && node -e \"require('fs').copyFileSync('dist/dev.html', 'index.html'); require('fs').copyFileSync('dist/dev.html', 'dist/index.html')\"",
     "preview": "vite preview"
   },
   "dependencies": {
