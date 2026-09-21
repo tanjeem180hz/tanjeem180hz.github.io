@@ -2,7 +2,7 @@
 
   # <img width="100" height="100" alt="dead-sleep-icon-1024-Photoroom" src="https://github.com/user-attachments/assets/b950bf83-a9a2-49c9-b33c-46b7746e4d79" />
  Dead Sleep
-  ### *Sleep on time. Wake up on time.*
+  # *Sleep on time. Wake up on time.*
 
   <p align="center">
     A smart Android bedtime companion designed to build healthier sleep routines through automated app blocking, proactive bedtime nudges, and interactive puzzle wake-up alarms.
