@@ -1,6 +1,7 @@
 <div align="center">
 
-  # <img width="112" height="112" alt="none" src="https://github.com/user-attachments/assets/a73fe034-fa85-47f8-bc57-600aa1ea775c" />
+  # <img width="1024" height="1024" alt="dead-sleep-icon-1024" src="https://github.com/user-attachments/assets/315df9b2-ce01-4916-8d29-38dfb44c2510" />
+
  Dead Sleep
   ### *Sleep on time. Wake up on time.*
 
