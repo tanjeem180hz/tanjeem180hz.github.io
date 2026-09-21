@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open /dev.html",
-    "build": "vite build && node -e \"require('fs').copyFileSync('dist/dev.html', 'index.html'); require('fs').copyFileSync('dist/dev.html', 'dist/index.html')\"",
+    "build": "vite build && node -e \"const fs = require('fs'); fs.copyFileSync('dist/dev.html', 'index.html'); fs.copyFileSync('dist/dev.html', 'dist/index.html'); fs.readdirSync('dist').forEach(f => { if(!fs.statSync('dist/' + f).isDirectory()) fs.copyFileSync('dist/' + f, f); });\"",
     "preview": "vite preview"
   },
   "dependencies": {

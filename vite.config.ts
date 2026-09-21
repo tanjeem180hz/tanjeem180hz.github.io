@@ -13,6 +13,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
   base: "./",
   build: {
+    assetsInlineLimit: 100000000,
     rollupOptions: {
       input: path.resolve(__dirname, "dev.html"),
     },
