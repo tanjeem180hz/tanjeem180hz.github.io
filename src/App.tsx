@@ -3,41 +3,45 @@ import logoImg from "./logo.png";
 import showcaseSvg from "./showcase.svg";
 
 export default function App() {
-  const letters = ["D", "E", "A", "D", " ", "S", "L", "E", "E", "P"];
-
   return (
     <div className="min-h-screen bg-[#070913] text-white flex flex-col items-center justify-center p-3 sm:p-6 md:p-8 relative overflow-hidden select-none">
       <style>{`
-        @keyframes letterWave {
-          0%, 100% {
-            transform: translateY(0px) scale(1);
-            color: #FFFFFF;
-            text-shadow: 0 0 14px rgba(140, 124, 251, 0.45), 0 0 28px rgba(91, 140, 255, 0.25);
+        /* Ultra-smooth, non-jumping light sweep animation */
+        .brand-title {
+          background: linear-gradient(
+            120deg,
+            #FFFFFF 15%,
+            #DDD6FE 35%,
+            #FFFFFF 50%,
+            #A78BFA 70%,
+            #FFFFFF 85%
+          );
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: smoothShimmer 6s ease-in-out infinite;
+          filter: drop-shadow(0 0 25px rgba(140, 124, 251, 0.45));
+        }
+
+        @keyframes smoothShimmer {
+          0% {
+            background-position: 0% 50%;
           }
           50% {
-            transform: translateY(-8px) scale(1.08);
-            color: #DDD6FE;
-            text-shadow: 0 0 22px rgba(140, 124, 251, 0.95), 0 0 45px rgba(91, 140, 255, 0.8), 0 0 65px rgba(140, 124, 251, 0.5);
+            background-position: 100% 50%;
           }
-        }
-
-        .letter-motion {
-          display: inline-block;
-          animation: letterWave 2.2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-          transition: transform 0.25s ease;
-        }
-
-        .letter-motion:hover {
-          transform: translateY(-12px) scale(1.2) !important;
-          color: #C4B5FD !important;
+          100% {
+            background-position: 0% 50%;
+          }
         }
       `}</style>
 
-      {/* Ambient Background Lighting */}
+      {/* Ambient Lighting Background */}
       <div className="absolute top-[6%] left-1/2 -translate-x-1/2 w-[550px] h-[550px] rounded-full bg-[#8C7CFB]/15 blur-[140px] pointer-events-none" />
       <div className="absolute bottom-[6%] left-1/2 -translate-x-1/2 w-[650px] h-[400px] rounded-full bg-[#5B8CFF]/10 blur-[150px] pointer-events-none" />
 
-      {/* Highlighted Logo & Large Animated Brand Name */}
+      {/* Highlighted Logo & Large Name (Smooth & Non-Jumping) */}
       <header className="relative z-10 mb-4 sm:mb-6 flex flex-row items-center justify-center gap-4 sm:gap-5">
         {/* Highlighted Logo */}
         <div className="relative group shrink-0">
@@ -51,22 +55,14 @@ export default function App() {
           </div>
         </div>
 
-        {/* Large Animated Name with Letter Motion */}
-        <h1 className="font-['Space_Grotesk'] text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold tracking-wider flex items-center select-none cursor-default">
-          {letters.map((char, i) =>
-            char === " " ? (
-              <span key={i} className="inline-block w-2.5 sm:w-4" />
-            ) : (
-              <span
-                key={i}
-                className="letter-motion"
-                style={{ animationDelay: `${i * 0.12}s` }}
-              >
-                {char}
-              </span>
-            )
-          )}
-        </h1>
+        {/* Large Highlighted Name */}
+        <div className="relative flex items-center">
+          {/* Subtle Ambient Backlight Glow behind Name */}
+          <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-violet-600/25 via-indigo-500/20 to-blue-500/25 blur-xl rounded-full pointer-events-none" />
+          <h1 className="relative font-['Space_Grotesk'] text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold tracking-wider select-none cursor-default brand-title">
+            DEAD SLEEP
+          </h1>
+        </div>
       </header>
 
       {/* Directly Displayed SVG Showcase */}
