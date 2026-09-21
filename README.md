@@ -1,58 +1,54 @@
-<div align="center">
-
 # 🌙 Dead Sleep
 
-### Sleep on time. Wake up on time.
+**Sleep on time. Wake up on time.**
 
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
-[![OOP](https://img.shields.io/badge/Architecture-OOP-8C7CFB?style=for-the-badge)](https://en.wikipedia.org/wiki/Object-oriented_programming)
-[![Status](https://img.shields.io/badge/Status-Student%20Project-5B8CFF?style=for-the-badge)](https://github.com/tanjeem180hz/dead-sleep)
-
-<br/>
-
-> **Dead Sleep** is a Java-based Android app that helps you sleep on time, wake up on time,  
-> and stay away from distracting apps during your sleeping hours.
-
-<br/>
-
-### 🚀 [View Live Demo →](https://tanjeem180hz.github.io/dead-sleep/)
-
-*Interactive phone mockup · All features animated · No installation needed*
-
-<br/>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![OOP](https://img.shields.io/badge/Object--Oriented-Design-8C7CFB?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Student%20Project-blue?style=flat-square)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-8C7CFB?style=flat-square)](https://tanjeem180hz.github.io/)
 
 ---
 
-</div>
+### 🌐 Live Web Demo
+Experience the interactive app preview and animated walkthrough directly in your browser:  
+👉 **[https://tanjeem180hz.github.io](https://tanjeem180hz.github.io/)**
 
-## 📖 About
+---
 
-Dead Sleep is a student Android project built to solve a real problem — people staying up too late on their phones.
+<p align="center">
+  <img src="assets/demo.gif" alt="Dead Sleep app demo" width="700">
+</p>
 
-The app lets you set a sleep schedule, choose which apps to block, and wakes you up with a challenge alarm you actually have to *solve* before it stops. It also protects itself from being uninstalled during sleep hours, so you can't cheat your way out.
+<!--
+  Replace assets/demo.gif with the exported clip from the app demo.
+  Create an /assets folder in your repo root and drop the GIF/MP4 there,
+  or update the path above to wherever you host it.
+-->
 
-<br/>
+## About
 
-## ⚡ Main Features
+Dead Sleep is a Java-based Android project made to help users sleep on time, wake up on time, and reduce unnecessary phone distractions during their sleeping hours.
 
-| # | Feature |
-|---|---------|
-| 🕐 | Set a personal **sleep and wake-up schedule** |
-| 🔔 | Get a **reminder notification** 30 minutes before sleep time |
-| 🔒 | **Automatically restrict** selected distracting apps at sleep time |
-| 🛡️ | **Delete protection** — Dead Sleep can't be uninstalled during sleep hours |
-| ⏰ | **Smart alarm** with customizable sound, volume, and snooze settings |
-| 🧩 | Stop the alarm only by completing a **puzzle, math, or game challenge** |
-| 📱 | **App selection** — choose which apps to block each night |
-| ⚙️ | Full **settings and personalization** for every preference |
+The idea is simple: the user sets a sleep schedule, chooses distracting apps, and the app helps them stay away from those apps during that time.
 
-<br/>
+You can also test the full animated concept on the live web demo at [tanjeem180hz.github.io](https://tanjeem180hz.github.io/).
 
-## 🗂️ Main Modules
+## Main Features
+
+- Set a personal sleep and wake-up schedule.
+- Get a reminder before sleep time.
+- Automatically start sleep mode at the scheduled time.
+- Keep selected distracting apps restricted during sleep time.
+- The Dead Sleep app cannot be deleted during the scheduled sleep time.
+- Show a smart alarm at wake-up time.
+- Stop the alarm only after completing a puzzle, math problem, game, or other challenge.
+- Allow users to customize their alarm settings.
+
+## Main Modules
 
 | Module | Responsibility |
-|--------|---------------|
+|---|---|
 | **User Setup** | First-time onboarding and preference collection |
 | **Sleep Schedule** | Sleep/wake time selection and weekly repeat rules |
 | **App Restriction** | Selecting and locking distracting apps during sleep |
@@ -61,67 +57,21 @@ The app lets you set a sleep schedule, choose which apps to block, and wakes you
 | **Challenge System** | Puzzle / math / game challenge required to stop the alarm |
 | **Settings** | App-wide configuration and personalization |
 
-<br/>
+## Tech Stack
 
-## 🛠️ Tech Stack
+- **Language:** Java
+- **Platform:** Android
+- **Architecture:** Object-Oriented Programming (OOP)
 
-```
-Language      →  Java
-Platform      →  Android (Android SDK)
-Architecture  →  Object-Oriented Programming (OOP)
-```
+## Future Improvements
 
-<br/>
+- Add more types of alarm challenges.
+- Add weekly sleep statistics and progress.
+- Give better routine suggestions based on user habits.
+- Add more flexible app restriction options.
+- Improve the UI and personalization.
+- Add more smart reminder options.
 
-## 🚀 Future Improvements
+## Team
 
-- [ ] Add more types of alarm challenges (memory, reaction, etc.)
-- [ ] Add weekly sleep statistics and progress tracking
-- [ ] Give smarter routine suggestions based on user habits
-- [ ] Add more flexible app restriction options
-- [ ] Improve UI design and personalization
-- [ ] Add more smart reminder options
-
-<br/>
-
-## 📁 Project Structure
-
-```
-dead-sleep/
-│
-├── app/
-│   ├── src/main/java/
-│   │   ├── UserSetup/          # Onboarding & preferences
-│   │   ├── SleepSchedule/      # Sleep/wake time management
-│   │   ├── AppRestriction/     # App blocking logic
-│   │   ├── ReminderSystem/     # Bedtime notifications
-│   │   ├── SmartAlarm/         # Alarm with challenge
-│   │   ├── ChallengeSystem/    # Puzzle / math / game
-│   │   └── Settings/           # App-wide config
-│   │
-│   └── res/                    # Layouts, drawables, strings
-│
-└── README.md
-```
-
-<br/>
-
-## 👥 Team
-
-> 🎓 Built as part of an **Android Application Development** course.
-> 
-> **Student Team Project**
-
-<br/>
-
----
-
-<div align="center">
-
-**🌙 Dead Sleep** &nbsp;·&nbsp; Java · Android SDK · OOP
-
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-tanjeem180hz.github.io%2Fdead--sleep-8C7CFB?style=for-the-badge)](https://tanjeem180hz.github.io/dead-sleep/)
-
-*Sleep on time. Wake up on time.*
-
-</div>
+Team Project — built as part of an Android application development.
