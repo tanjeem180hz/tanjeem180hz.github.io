@@ -108,11 +108,6 @@ The concept is straightforward:
 
 <br />
 
-## 👥 Team
-
-> 🎓 **Student Team Project** — Developed as part of an Android Application Development course.
-
----
 
 <div align="center">
   <sub>🌙 <b>Dead Sleep</b> · Sleep on time. Wake up on time.</sub><br/>
